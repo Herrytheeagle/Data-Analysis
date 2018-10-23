@@ -1,4 +1,4 @@
-import pandas
+import pandas as pd
 import datetime
 import pandas.io.data as web
 import matplotlib.pyplot as plt

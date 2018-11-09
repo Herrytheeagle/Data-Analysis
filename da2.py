@@ -9,19 +9,22 @@ web_stats = {'Day': [1, 2, 3, 4, 5, 6],
 
 df = pd.DataFrame(web_stats)
 
-print(df)
-print(df.head(3))
-print(df.tail(2))
+# # printing df
+# print(df)
+# print(df.head(3))
+# print(df.tail(2))
+#
+# # setting 'Day' as 'index'
+# print(df.set_index('Day'))
+# print(df.head())
+#
+# # Imp fmt of setting 'Day' as 'index'
+# df = df.set_index('Day')
+# print(df.head())
+#
+# # Another fmt of setting 'Day' as 'index'
+# df.set_index('Day', inplace=True)
+# print(df.head())
 
-# setting 'Day' as 'index'
-print(df.set_index('Day'))
-print(df.head())
-
-# Imp fmt of setting 'Day' as 'index'
-df = df.set_index('Day')
-print(df.head())
-
-# Another fmt of setting 'Day' as 'index'
-df.set_index('Day', inplace=True)
-print(df.head())
-
+# referencing a specific set
+print(df['Visitors'])

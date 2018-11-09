@@ -2,6 +2,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 from matplotlib import style
 style.use('ggplot')
+import numpy as np
 
 web_stats = {'Day': [1, 2, 3, 4, 5, 6],
              'Visitors': [43, 53, 34, 45, 64, 34],
@@ -29,4 +30,10 @@ df = pd.DataFrame(web_stats)
 # referencing a specific set
 print(df['Visitors'])
 # or
-print (df.Visitors)
+print(df.Visitors)
+# or
+print(df[['Bounce_Rate', 'Visitors']])
+
+# .tolist on single and multiple sets
+print(df.Visitors.tolist())
+print(np.array(df[['Bounce_Rate', 'Visitors']]))

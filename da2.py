@@ -28,3 +28,5 @@ df = pd.DataFrame(web_stats)
 
 # referencing a specific set
 print(df['Visitors'])
+# or
+print (df.Visitors)
